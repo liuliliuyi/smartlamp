@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="3dp" >
+
+    <ImageView
+        android:id="@+id/notificationImage"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/app_lancher" 
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="4dp"/>
+
+    <TextView
+        android:id="@+id/notificationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_toRightOf="@id/notificationImage"
+        android:paddingLeft="26dp"
+        
+        android:layout_marginTop="5dp"
+        />
+    <!-- android:textColor="#FF000000"  -->
+
+    <TextView
+        android:id="@+id/notificationPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/notificationTitle"
+       
+        android:paddingLeft="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/notificationProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/notificationTitle"
+        android:layout_alignParentRight="true"
+       
+        android:layout_below="@id/notificationTitle"
+        android:paddingLeft="26dp"
+        android:layout_marginRight="70dp"
+        android:paddingTop="2dp" />
+
+   <ImageView
+    android:id="@+id/cancle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/notificationProgress"
+    android:layout_alignParentRight="true"
+  
+    android:layout_marginRight="10dp"
+    
+     />
+
+</RelativeLayout>

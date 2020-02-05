@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/titile_top" />
+
+    <com.fengmap.android.map.FMMapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp" >
+    </com.fengmap.android.map.FMMapView>
+
+    <Button
+        android:id="@+id/yilou"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_radio_selector"
+        android:button="@null"
+        android:text="B2"
+        android:textColor="@color/inner_text_selector2"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/erlou"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/yilou"
+        android:layout_alignLeft="@+id/yilou"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/bg_radio_selector"
+        android:button="@null"
+        android:text="B1" />
+    
+        <ImageView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shineilogo" 
+         />
+
+</RelativeLayout>

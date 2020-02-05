@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 一级显示控制器SN、路灯编码、模式校验和、NB阶段、NB-CSQ、光板电压 -->
+
+    <RelativeLayout
+        android:id="@+id/shangping"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/card" >
+        
+        
+        <ImageView
+            android:id="@+id/sn_img"
+            android:layout_width="125dp"
+            android:layout_height="235dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-20dp"
+            
+          
+            />
+
+        <TextView
+            android:id="@+id/sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/sn_img"
+            android:text=""
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/moshixiaojian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sn"
+            android:layout_alignLeft="@+id/sn"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/nbchuji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/moshixiaojian"
+            android:layout_alignLeft="@+id/sn"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/nbcqs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nbchuji"
+            android:layout_alignLeft="@+id/sn"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="18dp" />
+
+        
+
+        <TextView
+            android:id="@+id/guangbandianya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nbcqs"
+            android:layout_alignLeft="@+id/sn"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:id="@+id/shandeng"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_shape10" >
+
+            <TextView
+                android:id="@+id/shandengtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:text="闪灯"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/shangbao"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/shandeng"
+            android:background="@drawable/bg_shape" >
+
+            <TextView
+                android:id="@+id/shangbaotext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:text="上报"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

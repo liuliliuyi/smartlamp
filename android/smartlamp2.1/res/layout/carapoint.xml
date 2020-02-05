@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_layout_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titile_top" />
+  <RelativeLayout
+        android:id="@+id/apoint_nofound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+       >
+
+        <ImageView
+            android:id="@+id/apoint_noimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/nofound"
+          
+           />
+        <TextView
+            android:id="@+id/apoint_shuoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/apoint_noimg"
+            android:text="您当前无订单信息"
+            android:layout_marginTop="8dp"
+            android:textSize="18dp"
+           />
+       
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/apoint_find"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:id="@+id/layout_cardtail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/carapoint_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_nav" >
+
+                <ImageView
+                    android:id="@+id/carapoint_img"
+                    android:layout_width="120dp"
+                    android:layout_height="83dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/yingyunav"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/carapoint_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/carapoint_img"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/carapoint_img"
+                   />
+
+                <TextView
+                    android:id="@+id/carapoint_adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/carapoint_name"
+                    android:layout_below="@+id/carapoint_name"
+                    android:layout_marginTop="10dp"
+                    android:text="水木清华小区(西门)"
+                    
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/carapoint_pimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/carapoint_name"
+                    android:layout_below="@+id/carapoint_adress"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/alarm_clock" />
+
+                <TextView
+                    android:id="@+id/carapoint_shijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/carapoint_adress"
+                    android:layout_toRightOf="@+id/carapoint_pimg"
+                   
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="12sp" />
+
+                
+
+                
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/carapoint_bg1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/carapoint_moneyimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/icon_park_price" />
+
+                <TextView
+                    android:id="@+id/carapoint_dayshijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/carapoint_moneyimg"
+                    android:text="白天" />
+
+                <TextView
+                    android:id="@+id/carapoint_dayshijian1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/carapoint_dayshijian"
+                    android:layout_alignBottom="@+id/carapoint_dayshijian"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/carapoint_dayshijian"
+                    android:text="10元/时(9:00-21:00)"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/carapoint_nightshijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/carapoint_dayshijian"
+                    android:layout_below="@+id/carapoint_dayshijian"
+                    android:layout_marginTop="8dp"
+                    android:text="夜晚" />
+
+                <TextView
+                    android:id="@+id/carapoint_nightshijian1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/carapoint_nightshijian"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/carapoint_nightshijian"
+                    android:text="5元/时(21:00-9:00)" />
+
+                <RelativeLayout
+                   
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/carapoint_moneyimg"
+                    android:layout_below="@+id/carapoint_moneyimg"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="-10dp" >
+
+                    
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/carapoint_line12"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/carapoint_toshijian1"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffcccccc" />
+            
+            
+              <TextView
+                    android:id="@+id/carapoint_toshijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/carapoint_moneyimg"
+                    android:layout_below="@+id/carapoint_moneyimg"
+                    android:layout_marginTop="30dp"
+                    android:text="预计到达时间" />
+
+                <RelativeLayout
+                    android:id="@+id/carapoint_toshijian1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/carapoint_toshijian"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_toRightOf="@+id/carapoint_toshijian" >
+
+                    <TextView
+                        android:id="@+id/carapoint_totext"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                      
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/carapoint_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/carapoint_toshijian1"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffcccccc" />
+
+                <TextView
+                    android:id="@+id/carapoint_toshijian2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/carapoint_moneyimg"
+                    android:layout_below="@+id/carapoint_line"
+                    android:layout_marginTop="15dp"
+                    android:text="预计停车时长" />
+
+                <RelativeLayout
+                    android:id="@+id/carapoint_countshijian"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/carapoint_toshijian2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_toRightOf="@+id/carapoint_toshijian2" >
+
+                    <TextView
+                        android:id="@+id/carapoint_shijiandetail"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    
+                </RelativeLayout>
+
+                <View
+                    
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/carapoint_toshijian2"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffcccccc" />
+
+                
+          
+            
+            
+            
+            
+            </RelativeLayout>
+        
+        <Button
+                    android:id="@+id/carapoint_queding"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dp"
+                   
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginRight="34dp"
+                    android:layout_marginTop="37dp"
+                    android:background="@drawable/dengluanniu"
+                    android:text="取消预订"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
+        
+        
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

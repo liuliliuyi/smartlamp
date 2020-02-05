@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titile_top" />
+
+   
+     <RelativeLayout
+        android:id="@+id/oder_nofound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+       >
+
+        <ImageView
+            android:id="@+id/oder_noimg"
+            android:layout_width="87dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/front_empty"
+          
+           />
+        <TextView
+            android:id="@+id/oder_shuoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/oder_noimg"
+            android:text="您当前无项目"
+            android:layout_marginTop="8dp"
+            android:textSize="18dp"
+           />
+       
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/dingdan_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"
+            android:listSelector="@android:color/transparent" />
+
+       
+    </RelativeLayout>
+
+</LinearLayout>

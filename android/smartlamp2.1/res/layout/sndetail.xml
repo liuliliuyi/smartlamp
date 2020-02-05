@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+
+    <include layout="@layout/titile_top" />
+
+    <ScrollView
+        android:id="@+id/scrollView_mine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+            android:id="@+id/sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="35dp"
+            android:text="SN:34UURURU"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/moshixiaojian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sn"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="模式校检：23"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/nbchuji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/moshixiaojian"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="NB初始阶段:0"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/nbcqs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nbchuji"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="NB-CSQ:23"
+            android:textSize="15dp" />
+
+        
+
+        <TextView
+            android:id="@+id/guangbandianya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nbcqs"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="光板电压:12.37"
+            android:textSize="15dp" />
+        
+          <TextView
+            android:id="@+id/imei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/guangbandianya"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="IMEI:2843873"
+            android:textSize="15dp" />
+        
+                <TextView
+            android:id="@+id/xinghao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imei"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="组号:0"
+            android:textSize="15dp" />
+                
+                 <TextView
+            android:id="@+id/jiange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xinghao"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="上传间隔:600"
+            android:textSize="15dp" />
+                 
+                 <TextView
+            android:id="@+id/ruanjianban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jiange"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="版本号:12233"
+            android:textSize="15dp" />
+                 
+                 
+                 <TextView
+            android:id="@+id/dianchidianya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ruanjianban"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="电池电压:12.122"
+            android:textSize="15dp" />
+                 
+                  <TextView
+            android:id="@+id/dianchileixing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dianchidianya"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="电池类型:283"
+            android:textSize="15dp" />
+                  
+                  
+                    <TextView
+            android:id="@+id/dianchishuliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dianchileixing"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="电池串数:23"
+            android:textSize="15dp" />
+                 
+        <!-- 控制器IMEI、控制器型号、组号、上报周期、软件版本、电池电压、电池类型 -->
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

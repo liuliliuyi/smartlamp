@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+
+    <include layout="@layout/titile_top" />
+
+    <ScrollView
+        android:id="@+id/scrollView_mine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                
+                 <RelativeLayout
+        android:id="@+id/xuanzhe"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_shape1"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp" >
+
+       
+
+             <TextView
+            android:id="@+id/kaishi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_centerInParent="true"
+            android:text="2019-12-25"
+            android:textSize="16sp" />
+        </RelativeLayout>
+        
+                 
+                 <TextView
+            android:id="@+id/zhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/xuanzhe"
+            android:text="至"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="22dp"
+            android:textStyle="bold"
+            android:textSize="28dp" />
+                 
+                 
+          <RelativeLayout
+        android:id="@+id/xuanzhe1"
+        android:layout_toRightOf="@+id/zhi"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_shape1"
+        android:layout_marginTop="20sp"
+        
+        android:layout_marginLeft="10sp" >
+
+             <TextView
+                  android:id="@+id/jiesu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2sp"
+            android:layout_centerInParent="true"
+            android:text="2019-12-25"
+            android:textSize="16sp" />
+       
+       
+       </RelativeLayout>
+                
+                
+                <TextView
+            android:id="@+id/sousuo"
+            android:layout_toRightOf="@+id/xuanzhe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22sp"
+            android:text="搜索"
+            android:layout_marginLeft="18dp"
+            android:textStyle="bold"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/moshixiaojian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/sn"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="95dp"
+            android:text="您一共上报"
+            android:textSize="17dp" />
+        
+        
+          <TextView
+              
+              
+            android:id="@+id/sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginTop="90dp"
+            android:layout_centerHorizontal="true"
+             android:text="  "
+             android:textStyle="bold"
+            android:textSize="28dp"
+            
+            
+             />
+
+        <TextView
+            android:id="@+id/nbchuji"
+            android:layout_toRightOf="@+id/sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="95dp"
+            android:text="个设备"
+            android:textSize="17dp" />
+
+      
+                 
+        <!-- 控制器IMEI、控制器型号、组号、上报周期、软件版本、电池电压、电池类型 -->
+            </RelativeLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

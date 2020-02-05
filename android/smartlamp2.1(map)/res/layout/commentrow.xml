@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+
+    <com.parking.widget.RoundImageView
+        android:id="@+id/comment_name"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="12dp"
+       
+        android:scaleType="centerCrop"
+        imagecontrol:border_inside_color="#fff7f2e9"
+        imagecontrol:border_outside_color="#ffd5d1c8"
+        imagecontrol:border_thickness="2dp" />
+
+    <TextView
+        android:id="@+id/comment_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/comment_name"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/comment_name"
+        android:text="油炸乌龟"
+      
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/comment_item_shijian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/comment_item_name"
+        android:layout_marginRight="30dp"
+        android:text="2015-1-4"
+       
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/comment_neirong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_item_name"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/comment_name"
+        android:text="jffhshjfhshhdhh"
+        
+        android:textSize="12dp" />
+
+</RelativeLayout>

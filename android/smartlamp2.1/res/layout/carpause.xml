@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_layout_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titile_top" />
+
+    <ScrollView
+        
+        android:id="@+id/ptrScrollView_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_home_topbar"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_cardtail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/cardause_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_nav" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/personel_arrow_right" />
+
+                <ImageView
+                    android:id="@+id/cardause_img"
+                    android:layout_width="120dp"
+                    android:layout_height="83dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp" />
+
+                <TextView
+                    android:id="@+id/cardause_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cardause_img"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/cardause_img"
+                    android:text="水木清华小区停车场" />
+
+                <TextView
+                    android:id="@+id/cardause_adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cardause_name"
+                    android:layout_below="@+id/cardause_name"
+                    android:layout_marginTop="10dp"
+                    android:text="水木清华小区(西门)"
+                    android:textColor="@color/tishi"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/cardause_pimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cardause_name"
+                    android:layout_below="@+id/cardause_adress"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/icon_park_count" />
+
+                <TextView
+                    android:id="@+id/cardause_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cardause_pimg"
+                    android:layout_toRightOf="@+id/cardause_pimg"
+                    android:text="总车位:680"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/cardause_emptyimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cardause_count"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@+id/cardause_count"
+                    android:src="@drawable/icon_park_empty" />
+
+                <TextView
+                    android:id="@+id/cardause_emptycount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cardause_count"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/cardause_emptyimg"
+                    android:text="空车位:200"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardause_bg1"
+                android:layout_width="fill_parent"
+                android:layout_height="145dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/cardause_moneyimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/icon_park_price" />
+
+                <TextView
+                    android:id="@+id/cardause_dayshijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/cardause_moneyimg"
+                    android:text="白天" />
+
+                <TextView
+                    android:id="@+id/cardause_dayshijian1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/cardause_dayshijian"
+                    android:layout_alignBottom="@+id/cardause_dayshijian"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/cardause_dayshijian"
+                    android:text="10元/时(9:00-21:00)"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/cardause_nightshijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cardause_dayshijian"
+                    android:layout_below="@+id/cardause_dayshijian"
+                    android:layout_marginTop="8dp"
+                    android:text="夜晚" />
+
+                <TextView
+                    android:id="@+id/cardause_nightshijian1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cardause_nightshijian"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/cardause_nightshijian"
+                    android:text="5元/时(21:00-9:00)" />
+
+                <TextView
+                    android:id="@+id/cardause_pepole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardause_nightshijian1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/cardause_pepole1"
+                   
+                    android:textColor="@color/red"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/cardause_pepole1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cardause_nightshijian"
+                    android:layout_below="@+id/cardause_nightshijian1"
+                    android:layout_marginTop="18dp"
+                    android:text="目前您排第" />
+
+                <TextView
+                    android:id="@+id/cardause_pepole2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cardause_pepole1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/cardause_pepole"
+                    android:text="位" />
+
+                <TextView
+                    android:id="@+id/cardause_pepoletime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardause_pepole1"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/cardause_pepoletime1"
+                    android:text="1"
+                    android:textColor="@color/red"
+                    android:textSize="21dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/cardause_pepoletime1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cardause_nightshijian"
+                    android:layout_below="@+id/cardause_pepole1"
+                    android:layout_marginTop="16dp"
+                    android:text="预计排队时间为"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/cardause_pepoletime2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cardause_pepoletime1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/cardause_pepoletime"
+                    android:text="分钟!"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/cardause_queding"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="34dp"
+                android:layout_marginTop="37dp"
+                android:background="@drawable/dengluanniu"
+                android:text="取消排队"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

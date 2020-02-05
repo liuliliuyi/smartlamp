@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/titile_top" />
+
+    <RelativeLayout
+        android:id="@+id/ditublow"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp" >
+
+        <ImageView
+            android:id="@+id/toptitileimg"
+            android:layout_width="35dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/coupon_bg_vailable_right" />
+
+        <ImageView
+            android:id="@+id/toptitileimg2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/map_location_my_position_in_map" />
+
+        <ImageView
+            android:id="@+id/toptitileimg3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_toRightOf="@+id/toptitileimg"
+            android:background="@drawable/btn_offline_map_pressed" />
+
+        <EditText
+            android:id="@+id/nicheng"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/toptitileimg2"
+            android:background="@null"
+            android:focusableInTouchMode="true"
+            android:hint="请输入目的地的名称"
+            android:paddingRight="5.0dip"
+            android:singleLine="true"
+            android:textColor="@color/tishi"
+            android:textColorHint="@color/tishi"
+            android:textSize="15.0dp" >
+        </EditText>
+    </RelativeLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_below="@+id/ditublow" />
+
+   
+
+</RelativeLayout>

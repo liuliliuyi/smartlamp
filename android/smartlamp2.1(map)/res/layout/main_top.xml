@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/top_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/top_blue"
+       >
+
+      <TextView
+        android:id="@+id/parking_titile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:text="遨泊"
+       /> 
+   
+        
+        </RelativeLayout>
+

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_layout_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titile_top" />
+
+    <ScrollView
+        android:id="@+id/cardetail_find"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:id="@+id/layout_cardtail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/cardetail_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_nav" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/personel_arrow_right" />
+
+               
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="查看"
+                    android:textSize="10dp"
+                    />
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/personel_arrow_right" />
+
+                <ImageView
+                    android:id="@+id/cardetail_img"
+                    android:layout_width="120dp"
+                    android:layout_height="83dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/yingyunav" />
+
+                <TextView
+                    android:id="@+id/cardetail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cardetail_img"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/cardetail_img" />
+
+                <TextView
+                    android:id="@+id/cardetail_adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cardetail_name"
+                    android:layout_below="@+id/cardetail_name"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/tishi"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/cardetail_pimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cardetail_name"
+                    android:layout_below="@+id/cardetail_adress"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/icon_park_count" />
+
+                <TextView
+                    android:id="@+id/cardetail_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cardetail_pimg"
+                    android:layout_toRightOf="@+id/cardetail_pimg"
+                    android:text="总车位:680"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/cardetail_emptyimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cardetail_count"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@+id/cardetail_count"
+                    android:src="@drawable/icon_park_empty" />
+
+                <TextView
+                    android:id="@+id/cardetail_emptycount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cardetail_count"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/cardetail_emptyimg"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardetail_bg1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/cardetail_moneyimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/icon_park_price" />
+
+                <TextView
+                    android:id="@+id/cardetail_dayshijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/cardetail_moneyimg"
+                    android:text="白天" />
+
+                <TextView
+                    android:id="@+id/cardetail_dayshijian1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/cardetail_dayshijian"
+                    android:layout_alignBottom="@+id/cardetail_dayshijian"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/cardetail_dayshijian"
+                    android:text="10元/时(9:00-21:00)"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/cardetail_nightshijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cardetail_dayshijian"
+                    android:layout_below="@+id/cardetail_dayshijian"
+                    android:layout_marginTop="8dp"
+                    android:text="夜晚" />
+
+                <TextView
+                    android:id="@+id/cardetail_nightshijian1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cardetail_nightshijian"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/cardetail_nightshijian"
+                    android:text="5元/时(21:00-9:00)" />
+
+                <TextView
+                    android:id="@+id/cardetail_toshijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cardetail_moneyimg"
+                    android:layout_below="@+id/cardetail_moneyimg"
+                    android:layout_marginTop="30dp"
+                    android:text="预计到达时间" />
+
+                <RelativeLayout
+                    android:id="@+id/cardetail_toshijian1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cardetail_toshijian"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_toRightOf="@+id/cardetail_toshijian" >
+
+                    <TextView
+                        android:id="@+id/cardetail_totext"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="请选择预订到达时间"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_toRightOf="@+id/cardetail_totext"
+                        android:src="@drawable/personel_arrow_right" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/cardetail_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/cardetail_toshijian1"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffcccccc" />
+
+                <TextView
+                    android:id="@+id/cardetail_toshijian2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cardetail_moneyimg"
+                    android:layout_below="@+id/cardetail_line"
+                    android:layout_marginTop="15dp"
+                    android:text="预计停车时长" />
+
+                <RelativeLayout
+                    android:id="@+id/cardetail_countshijian"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cardetail_toshijian2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_toRightOf="@+id/cardetail_toshijian2" >
+
+                    <TextView
+                        android:id="@+id/cardetail_shijiandetail"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="请选择停车时长"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/cardetail_shijiandetail"
+                        android:src="@drawable/personel_arrow_right" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/cardetail_line12"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/cardetail_toshijian2"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffcccccc" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/cardetail_queding"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="34dp"
+                android:layout_marginTop="37dp"
+                android:background="@drawable/dengluanniu"
+                android:text="确定预订"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

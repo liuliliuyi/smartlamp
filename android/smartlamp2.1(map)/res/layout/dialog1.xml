@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/cacel_cacel"
+        android:layout_width="150dp"
+        android:layout_height="58dp"
+        android:layout_alignParentLeft="true" >
+
+        <ImageView
+            android:id="@+id/cacel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/cacel1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shuoming1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="45dp"
+        android:textColor="@color/black"
+        android:text="系统为您分配" />
+
+    <TextView
+        android:id="@+id/shuoming2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/shuoming1"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/shuoming1"
+        android:text="28"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/shuoming3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/shuoming2"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/shuoming2"
+         android:textColor="@color/black"
+        android:text="车位锁!" />
+
+    <TextView
+        android:id="@+id/shuoming4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shuoming1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+         android:textColor="@color/black"
+        android:text="请打开您的蓝牙进行导航!" />
+
+    <RelativeLayout
+        android:id="@+id/open_queding"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/top_blue" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="确定"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

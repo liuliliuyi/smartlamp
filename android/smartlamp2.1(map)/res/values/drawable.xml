@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- app背景色 -->
+    <drawable name="android_layout_bg">#f2f3f5</drawable>
+    <drawable name="top_blue">#35B6FF</drawable>
+    <drawable name="background">#FBF5FB</drawable>
+
+    <!-- 分隔条颜色 -->
+    <drawable name="divider_color">#cccccc</drawable>
+   <!-- 透明 -->
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="hintColor">#d7d7d7</drawable>
+</resources>

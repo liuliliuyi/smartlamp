@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/shangping"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_shape10" >
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="      sn:" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/textView4"
+            android:text="132333" />
+
+        <TextView
+            android:id="@+id/zhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/red"
+            android:text="未处理" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/zhuangtai"
+            android:background="@color/black1" />
+
+        <TextView
+            android:id="@+id/jibie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/view"
+           
+            android:textSize="15dp"
+            android:text="状态" />
+          <RelativeLayout
+        android:id="@+id/jiantouclick"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+         >
+        
+        <ImageView
+                        
+                        android:id="@+id/jiantou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/personel_arrow_right" />
+        
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/textView3"
+            android:text="距离:" />
+
+        <TextView
+            android:id="@+id/dingdanhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/textView10"
+            android:text="15公里" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView10"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/textView3"
+            android:text="描述:" />
+
+        <TextView
+            android:id="@+id/xiadanshijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView10"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/textView11"
+            android:text="868744037818386" />
+
+        
+
+       
+        <TextView
+            android:id="@+id/shijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_below="@+id/xiadanshijian"
+            android:layout_marginTop="3dp"
+            android:text="发生时间:   2019-06-29 00:00:32" />
+    </RelativeLayout>
+
+</RelativeLayout>

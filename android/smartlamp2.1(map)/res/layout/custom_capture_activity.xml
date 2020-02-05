@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+  
+   
+  
+    
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.king.zxing.ViewfinderView
+        android:id="@+id/viewfinderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:labelText="@string/tips_scan_code"
+        app:labelTextSize="@dimen/size_14sp"
+        app:laserColor="@color/colorAccent"
+        app:frameColor="@color/colorPrimary"
+        app:cornerColor="@color/colorPrimary"
+        app:resultPointColor="@color/colorAccent"
+        app:labelTextLocation="bottom"
+        app:laserStyle="grid"/>
+    <ImageView
+        android:id="@+id/ivFlash"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:src="@drawable/flash_selected_selector"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        style="@style/OnClick"/>
+    
+    
+     <ImageView
+        android:id="@+id/ivLeft"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/btn_back_normal"
+        android:paddingLeft="@dimen/size_14dp"
+        android:paddingRight="@dimen/size_14dp"
+        style="@style/OnClick"/>
+   
+</RelativeLayout>

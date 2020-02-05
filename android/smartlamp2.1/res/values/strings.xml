@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">智慧路灯</string>
+    <string name="dingdan">百宝箱</string>
+    <string name="mycentre">我的</string>
+    <string name="home">首页</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="app_id">52e4e08e</string>
+    <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_title_tts_speed">语速</string>
+    <string name="preference_default_tts_speed">50</string>
+    <string name="preference_dialog_title_tts_speed">选择语速</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_title_tts_volume">音量</string>
+    <string name="preference_default_tts_volume">50</string>
+    <string name="preference_dialog_title_tts_volume">选择音量</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+    <string name="preference_title_tts_pitch">语调</string>
+    <string name="preference_default_tts_pitch">50</string>
+    <string name="intell_bd_title">智能播报</string>
+    
+     <string name="libraryzxing_get_pic_fail">获取图片失败</string>
+    <string name="libraryzxing_analysis_pic_fail">图片格式错误</string>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <!--微信底部的提示 -->
+    <string name="app_tip">提示</string>
+<string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+ <string name="permission_camera">App扫码需要用到拍摄权限</string>
+    <string name="permission_external_storage">App需要用到读写权限</string>
+    <string name="tips_scan_code">将二维码/条形码放入框内，即可自动扫描</string>
+    <string name="qr_code">二维码</string>
+    <string name="bar_code">条形码</string>
+    
+     <string name="insert_card">插入卡</string>
+    <string name="down_fail">下载失败</string>
+    <string name="is_downing">正在下载</string>
+    <string name="down_sucess">下载成功</string>
+    
+    
+    
+     <string name="action_settings">恢复默认设置:</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="search">蓝牙搜索</string>
+    
+    <string name="can_1">控制器参数设置</string>
+    <string name="can_2">控制器实时参数据</string>
+    <string name="can_3">已 存 控 制 器 参 数</string>
+    <string name="can_4">遥   控   器   设   置</string>
+    <string name="can_5">发 送</string>
+    <string name="can_6">接 收</string>
+    <string name="battery_1">磷酸铁锂</string>
+    <string name="battery_2">三元锂电</string>
+    <string name="battery_3">胶体电池</string>
+    <string name="set_battery_1">自定义磷酸铁锂</string>
+    <string name="set_battery_2">自定义三元锂电</string>
+    <string name="set_battery_3">自定义胶体电池</string>
+    <string name="battery_area">电池类型设置区</string>
+    <string name="Work_area">工作模式设置区</string>
+    <string name="Light_board_area">光板参数设置区</string>
+    <string name="Reduced_area">降功模式设置区</string>
+    <string name="text_size">35px</string>
+    <string name="bz">1</string>
+    <string name="modes_set">控制器参数设置区</string>
+    <string name="battery_set">电池类型设置</string>
+    <string name="ok">确定</string>
+    <string name="quit">取消</string>
+    <string name="fanhui">返回</string>
+    <string name="ble_not_supported">BLE 不支持</string>
+    <string name="label_data">数据:</string>
+    <string name="label_device_address">设备地址:</string>
+    <string name="label_state">状态:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">有联系的</string>
+    <string name="disconnected">断开的</string>
+    <string name="title_devices">设备扫描</string>
+    <string name="error_bluetooth_not_supported">蓝牙不支持.</string>
+    <string name="unknown_device">未知设备</string>
+    <string name="unknown_characteristic">未知特征</string>
+    <string name="unknown_service">未知服务</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">已连接</string>
+    <string name="menu_disconnect">未连接</string>
+    <string name="menu_scan">扫描</string>
+    <string name="menu_stop">停止</string>
+
+    <color name="color1">#4F81BC</color>
+    <color name="color2">#3880FF</color>
+    <color name="but_color">#EDF2EF</color>
+
+    <string name="battery_set_item_1">超压保护:</string>
+    <string name="battery_set_item_2">标准满电电压:</string>
+    <string name="battery_set_item_3">充电限值电压:</string>
+    <string name="battery_set_item_4">充电返回电压:</string>
+    <string name="battery_set_item_5">过放返回电压:</string>
+    <string name="battery_set_item_6">过放电压:</string>
+    <string name="battery_set_item_7">上限温度:</string>
+    <string name="battery_set_item_8">下限温度:</string>
+    <string name="battery_set_item_9">功率调节电压:</string>
+    <string name="battery_set_item_10">提升充电压:</string>
+    <string name="battery_set_item_11">直充电压:</string>
+    <string name="battery_set_item_12">浮充电压:</string>
+    <string name="battery_set_item_13">限制充电电压:</string>
+    <string name="battery_set_item_14">当前电池类型:</string>
+    <string name="VER">  V</string>
+    <string name="V">V</string>
+    <string name="v_1">%</string>
+    <string name="v_2">秒</string>
+    <string name="v_3">℃</string>
+    <string name="v_4">W</string>
+    <string name="v_5">天</string>
+    <string name="v_6">次</string>
+    <string name="v_7">mA</string>
+    <string name="work">工作模式</string>
+    <string name="work_1">一键模式</string>
+    <string name="work_2">时控模式</string>
+    <string name="work_3">光控模式</string>
+    <string name="work_4">人工模式</string>
+    <string name="light_board">光板参数</string>
+    <string name="light_board_1">光板开启电压:</string>
+    <string name="light_board_2">光板延时时长:</string>
+    <string name="reduced">降功模式</string>
+    <string name="reduced_1">无降功模式</string>
+    <string name="reduced_2">降功幅度小</string>
+    <string name="reduced_3">降功幅度中</string>
+    <string name="reduced_4">降功幅度大</string>
+    <string name="realTime">控制器接收实时数据</string>
+    <string name="realTime_1">型  号 : </string>
+    <string name="realTime_2">电池电压 :</string>
+    <string name="realTime_3">电池状态 :</string>
+    <string name="realTime_4">电池温度 : </string>
+    <string name="realTime_5">LED电压 : </string>
+    <string name="realTime_6">LED亮度 : </string>
+    <string name="realTime_7">LED功率 : </string>
+    <string name="realTime_8">光板电压 : </string>
+    <string name="realTime_9">充电温度 : </string>
+    <string name="realTime_10">运行天数 : </string>
+    <string name="realTime_11">断电次数 : </string>
+    <string name="realTime_12">模式修改 : </string>
+    <string name="alreadySaved">已存模式</string>
+    <string name="alreadySaved_1">型  号  :</string>
+    <string name="alreadySaved_2">组  号  : </string>
+    <string name="alreadySaved_3">当前模式类型  : </string>
+    <string name="alreadySaved_4">降功幅度  : </string>
+    <string name="alreadySaved_5">亮度功率  : </string>
+    <string name="alreadySaved_6">光控电压  : </string>
+    <string name="alreadySaved_7">光控延时  : </string>
+    <string name="alreadySaved_8">感应模式  : </string>
+    <string name="alreadySaved_9">感应休眠功率 : </string>
+    <string name="remote">系统设置</string>
+    <string name="remote_1">负载检测 : </string>
+    <string name="remote_2">组    号  : </string>
+    <string name="remote_3">背光亮度 : </string>
+    <string name="remote_4">背光时间 : </string>
+    <string name="remote_5">版本号  : </string>
+    <string name="remote_6">ID : </string>
+    <string name="timecontrol_1">时  段</string>
+    <string name="timecontrol_2">时  间(分)</string>
+    <string name="timecontrol_3">亮  度(W)</string>
+    <string name="timecontrol_4">感应开关</string>
+    <string name="timecontrol_5">休眠亮度(W)</string>
+    <string name="timecontrol">时段设置</string>
+    <string name="timecontrol_1_1">一时段</string>
+    <string name="timecontrol_1_2">二时段</string>
+    <string name="timecontrol_1_3">三时段</string>
+    <string name="timecontrol_1_4">四时段</string>
+    <string name="timecontrol_1_5">五时段</string>
+    <string name="timecontrol_1_6">六时段</string>
+    <string name="timecontrol_1_7">七时段</string>
+    <string name="timecontrol_1_8">晨亮时段</string>
+    <string name="artificial">人工模式</string>
+    <string name="artificial_1">人工模式</string>
+    <string name="artificial_2">人工模式</string>
+    <string name="artificial_3">人工模式</string>
+    <string name="reduced_pow">光控模式</string>
+    <string name="reduced_pow_1">亮度等级 : </string>
+    <string name="reduced_pow_2">感应模式 : </string>
+    <string name="reduced_pow_3">感应休眠亮度 : </string>
+    <string name="saomiao">扫描</string>
+    <string name="stop">停止</string>
+    <string name="lian">已连接</string>
+    <string name="ling">0%</string>
+    
+    <string name="xun">寻灯</string>
+    <string name="xiumian">休眠</string>
+    <string name="huan">唤醒</string>
+    <string name="setData">组号设置</string>
+    <string name="ming">开灯</string>
+    <string name="noming">关灯</string>
+    <string name="setData_list">设置</string>
+    <string name="list_xun">列表</string>
+    <string name="dan_deng">单灯操作</string>
+    
+    <string name="dan_btn_1">写入工作模式</string>
+    <string name="dan_btn_2">读取工作模式</string>
+    <string name="dan_btn_3">读取运行数据</string>
+    <string name="dan_btn_4">手动开灯</string>
+    <string name="dan_btn_5">手动关灯</string>
+    <string name="dan_btn_6">手动休眠</string>
+    <string name="dan_btn_7">故障分析</string>
+    <string name="dan_btn_11">恢复出厂</string>
+    <string name="dan_btn_12">重    启</string>
+    <string name="wakeing">正在唤醒设备</string>
+    <string name="dormancying">正在休眠设备</string>
+    <string name="djs">时间:60 秒</string>
+    <string name="xiu">时间:10 秒</string>
+    <string name="numSum">数量:0</string>
+    
+    <string name="fuzainame">负载总电流</string>
+    <string name="fuzai_1">灯板最大电流:</string>
+
+    
+    <string name="cont_1_dianchi">电池:</string>
+    
+    
+    <string name="cont_2_tiaogong">调功模式:</string>
+    
+    <string name="cont_2_yi_shi">一段时长:</string>
+    <string name="cont_2_yi_liang">一段亮度:</string>
+    <string name="cont_2_yi_gan">一段感应:</string>
+    
+    <string name="cont_2_er_shi">二段时长:</string>
+    <string name="cont_2_er_liang">二段亮度:</string>
+    <string name="cont_2_er_gan">二段感应:</string>
+    
+    <string name="cont_2_san_shi">三段时长:</string>
+    <string name="cont_2_san_liang">三段亮度:</string>
+    <string name="cont_2_san_gan">三段感应:</string>
+    
+    <string name="cont_2_si_shi">四段时长:</string>
+    <string name="cont_2_si_liang">四段亮度:</string>
+    <string name="cont_2_si_gan">四段感应:</string>
+    
+    <string name="cont_2_wu_shi">五段时长:</string>
+    <string name="cont_2_wu_liang">五段亮度:</string>
+    <string name="cont_2_ywu_gan">五段感应:</string>
+    
+    <string name="cont_2_liu_shi">六段时长:</string>
+    <string name="cont_2_liu_liang">六段亮度:</string>
+    <string name="cont_2_liu_gan">六段感应:</string>
+    
+    <string name="cont_2_qi_shi">七段时长:</string>
+    <string name="cont_2_qi_liang">七段亮度:</string>
+    <string name="cont_2_qi_gan">七段感应:</string>
+    
+    <string name="cont_2_ba_shi">八段时长:</string>
+    <string name="cont_2_ba_liang">八段亮度:</string>
+    <string name="cont_2_ba_gan">八段感应:</string>
+    
+    <string name="next">下一页</string>
+    <string name="top">上一页</string>
+    <string name="breakhome">返回首页</string>
+    
+    <string name="VoltagePlatform">电压平台:</string>
+    <string name="battery_Type">电池类型:</string>
+    <string name="overpressure_Protection">超压保护:</string>
+    <string name="limitedChargeVoltage">充电限制电压:</string>
+    <string name="over_Charge_Voltage">标准满电压:</string>
+    <string name="recharge_Voltage">充电返回电压:</string>
+    <string name="lift_Charge_Voltage">提升充电压:</string>
+    <string name="direct_ChargeVoltage">直充电压:</string>
+    <string name="floatingChargeVoltage">浮充电压:</string>
+    <string name="overDischargeBackVoltage">过放返回电压:</string>
+    <string name="overDischargeVoltage">过放电压:</string>
+    <string name="lowTemperatureRange">低温范围:</string>
+    <string name="highTemperatureRange">高温温度:</string>
+    <string name="powerRegulationVoltage">功率调整电压:</string>
+    <string name="loadMaxCurrent">负载最大电流:</string>
+    
+    <string name="work_Type">工作类型:</string>
+    <string name="Timer0.timeLength">一时段:</string>
+    <string name="Timer0.inductionFlagAndledBrightness">功率:</string>
+    <string name="Timer1.timeLength">二时段:</string>
+    <string name="Timer1.inductionFlagAndledBrightness">功率:</string>
+    <string name="Timer2.timeLength">三时段:</string>
+    <string name="Timer2.inductionFlagAndledBrightness">功率:</string>
+    <string name="Timer3.timeLength">四时段:</string>
+    <string name="Timer3.inductionFlagAndledBrightness">功率:</string>
+    <string name="Timer4.timeLength">五时段:</string>
+    <string name="Timer4.inductionFlagAndledBrightness">功率:</string>
+    <string name="Timer5.timeLength">六时段:</string>
+    <string name="Timer5.inductionFlagAndledBrightness">功率:</string>
+    <string name="Timer6.timeLength">七时段:</string>
+    <string name="Timer6.inductionFlagAndledBrightness">功率:</string>
+    <string name="Timer7.timeLength">晨亮:</string>
+    <string name="Timer7.inductionFlagAndledBrightness">功率:</string>
+    <string name="lightControlDelay">光控制延时:</string>
+    <string name="sunControlVoltage">光控制电压:</string>
+    <string name="sunConInductionFlagAndLedBrightness">光控感应亮度:</string>
+    <string name="handConInductionFlagAndLedBrightness">感应亮度:</string>
+    <string name="inductionDormantBrightness">感应休眠功率:</string>
+    <string name="cpy_ok">复制到已存</string>
+    <string name="cpy_quit">不需要存储</string>
+    <string name="modify">修改</string>
+    <string name="jianggongfudu">降功模式:</string>
+    
+    
+    <string name="system_name">蓝牙修改</string>
+    <string name="ble_name">蓝牙名称:</string>
+    <string name="ble_mima">蓝牙密码:</string>
+    <string name="ble_set">修改</string>
+    <string name="ble_sj">控制器升级</string>
+    
+    <string name="notData">正在寻灯...</string>
+</resources>

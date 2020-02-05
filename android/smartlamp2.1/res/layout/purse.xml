@@ -1,0 +1,235 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_layout_bg" >
+
+    <include layout="@layout/titile_top" />
+
+    <RelativeLayout
+        android:id="@+id/ditublow"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="65dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/purse_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="13dp"
+            android:text="您当前的停车费用:"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/money_chongzhi"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/purse_money"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/purse_shier"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/purse_moneyimgshier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="20元"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/purse_wushi"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/purse_moneyimgwushi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="50元"
+                    
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/purse_yibai"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/purse_moneyimgyibai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="100元"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/purse_erbai"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:id="@+id/purse_moneyimgerbai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="200元"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/purse_fangshi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ditublow" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="13dp"
+            android:text="请选择支付方式"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+   
+
+    <RelativeLayout
+        android:id="@+id/purse_weixin"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/purse_fangshi"
+        android:layout_marginTop="15dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/purse_weixinimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/wechat" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/purse_weixinimg"
+            android:text="微信"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/purse_weixinquan"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/xian_aplay"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/purse_weixin"
+        android:layout_marginLeft="12dp"
+        android:background="#ffcccccc" />
+
+    <RelativeLayout
+        android:id="@+id/purse_aplay"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/xian_aplay"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/purse_aplayimg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/alipay" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/purse_aplayimg"
+            android:text="支付宝"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/purse_aplayquan"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/purse_tishi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/purse_aplay"
+        android:layout_margin="20sp" >
+
+        <ImageView
+            android:id="@+id/purse_tishiimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wenxingtishi" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+           
+            android:layout_toRightOf="@+id/purse_tishiimg"
+            android:text="温馨提示:支付后不予退款"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/purse_charge"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/purse_tishi"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/dengluanniu"
+        android:text="立即充值"
+        android:textColor="@color/white"
+        android:textSize="13dp" />
+
+</RelativeLayout>
